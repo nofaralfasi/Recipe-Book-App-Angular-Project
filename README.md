@@ -1,3 +1,5 @@
+<a href="http://ng-recipe-book-deployment102.s3-website.us-east-2.amazonaws.com/my-first-app/" target="_blank">Visit App Website!</a> 
+
 # Project
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.4.
