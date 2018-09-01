@@ -1,28 +1,39 @@
-import { Component, OnInit } from '@angular/core';
-import {Recipe} from '../recipe.model';
+import { Component, OnInit, OnDestroy } from '@angular/core';
+import { Router, ActivatedRoute } from '@angular/router';
+import { Subscription } from 'rxjs/Subscription';
 
-const baguette = 'https://images.pexels.com/photos/103657/' +
-  'baguette-bread-herb-baguette-frisch-103657.jpeg?cs=srgb&dl=baguette-baked-goods-bread-103657.jpg&fm=jpg';
-const pasta = 'https://upload.wikimedia.org/wikipedia/commons/2/2e/Mmm..._pretty_summer_salad_%286005733739%29.jpg';
-const fruit = 'https://c1.staticflickr.com/6/5737/30622968353_35e06fcb52_b.jpg';
-const soup = 'https://c.pxhere.com/photos/9d/f4/tom_kha_gai_soup_asia_thailand_chili-1415918.jpg!d';
+import { Recipe } from '../recipe.model';
+import { RecipeService } from '../recipe.service';
 
 @Component({
   selector: 'app-recipe-list',
   templateUrl: './recipe-list.component.html',
   styleUrls: ['./recipe-list.component.css']
 })
-export class RecipeListComponent implements OnInit {
-  recipes: Recipe[] = [
-    new Recipe('Fruit Salad', 'With bananas and apples', fruit),
-    new Recipe('Soup', 'With tomatoes', soup),
-    new Recipe('Baguette', 'Italic bread', baguette),
-    new Recipe('Pasta', 'With vegetables', pasta)
-  ];
+export class RecipeListComponent implements OnInit, OnDestroy {
+  recipes: Recipe[];
+  subscription: Subscription;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private recipeService: RecipeService,
+              private router: Router,
+              private route: ActivatedRoute) {
   }
 
+  ngOnInit() {
+    this.subscription = this.recipeService.recipesChanged
+      .subscribe(
+        (recipes: Recipe[]) => {
+          this.recipes = recipes;
+        }
+      );
+    this.recipes = this.recipeService.getRecipes();
+  }
+
+  onNewRecipe() {
+    this.router.navigate(['new'], {relativeTo: this.route});
+  }
+
+  ngOnDestroy() {
+    this.subscription.unsubscribe();
+  }
 }
