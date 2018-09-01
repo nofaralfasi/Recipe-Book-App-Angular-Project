@@ -1,0 +1,5 @@
+.btn-primary, .btn-success {
+  margin: 10px 5px 10px 5px;
+  font: bold .9em/2 Arial, sans-serif;
+  border: 1px solid #000;
+}
