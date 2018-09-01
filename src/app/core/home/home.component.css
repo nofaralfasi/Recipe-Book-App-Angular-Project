@@ -1,0 +1,15 @@
+
+
+.intro h1{
+  font-size: 60px;
+  line-height: 80px;
+  margin-bottom: 16px;
+  color: #ecfdff;
+}
+.intro h1 span{
+  color: #f6f6f6;
+}
+.intro p{
+  color: #f7f7f7;
+  margin-bottom: 50px;
+}
