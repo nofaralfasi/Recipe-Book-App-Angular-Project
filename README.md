@@ -6,7 +6,7 @@ welcome-page:
 shopping-list-page:
 ![shopping-list-page](https://user-images.githubusercontent.com/38184193/54035623-7a21b100-41c2-11e9-8c8f-f1fce7138129.png)
 
-recipe-page:
+recipes-page:
 ![recipe-page](https://user-images.githubusercontent.com/38184193/54035628-7d1ca180-41c2-11e9-9831-11c0f3438c51.png)
 
 # Project
