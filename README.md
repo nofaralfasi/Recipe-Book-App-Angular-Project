@@ -1,13 +1,13 @@
 <a href="http://ng-recipe-book-deployment102.s3-website.us-east-2.amazonaws.com/my-first-app/" target="_blank">Visit App Website!</a> 
 
 ### welcome-page:
-![welcome-page](https://user-images.githubusercontent.com/38184193/54035607-6d9d5880-41c2-11e9-9834-5a3aebb77fe8.png)
+![welcome-page](https://user-images.githubusercontent.com/38184193/54035931-1ea3f300-41c3-11e9-98f1-7a57003e67bb.png)
 
 ### shopping-list-page:
-![shopping-list-page](https://user-images.githubusercontent.com/38184193/54035623-7a21b100-41c2-11e9-8c8f-f1fce7138129.png)
+![shopping-list-page](https://user-images.githubusercontent.com/38184193/54035944-2368a700-41c3-11e9-9633-86ff171072ad.png)
 
 ### recipes-page:
-![recipe-page](https://user-images.githubusercontent.com/38184193/54035628-7d1ca180-41c2-11e9-9831-11c0f3438c51.png)
+![recipe-page](https://user-images.githubusercontent.com/38184193/54036018-3ed3b200-41c3-11e9-98d3-0053f8ff8a12.png)
 
 # Project
 
