@@ -1,5 +1,3 @@
-<a href="http://ng-recipe-book-deployment102.s3-website.us-east-2.amazonaws.com/my-first-app/" target="_blank">Visit App Website!</a> 
-
 ### welcome-page:
 ![welcome-page](https://user-images.githubusercontent.com/38184193/54035931-1ea3f300-41c3-11e9-98f1-7a57003e67bb.png)
 
